@@ -1,6 +1,16 @@
-number = input("Введите год: ")
-number = int(number)
+year = input("Введите год: ")
+number = int(year)
+number=False
 if number % 4 == 0:
-   print("Это высокосный год")
-else:
-   print("Это не высокосный год")
+   number=True
+   if number % 100 == 0 and number % 400 != 0:
+      number=False
+   elif number % 400 == 0:
+      number=True
+if number = True:
+   print("это високосный год")
+if number = False:
+   print("это не високосный год")
+       
+      
+   
